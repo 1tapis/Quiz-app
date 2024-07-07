@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+        <div id="quiz-question"></div>
+        <div class="options">
+            <div class="option-item">
+                <input type="radio" id="option_a" name="answer">
+                <label id="text_option_a" for="option_a"></label>
+            </div>
+            <div class="option-item">
+                <input type="radio" id="option_b" name="answer">
+                <label id="text_option_b" for="option_b"></label>
+            </div>
+            <div class="option-item">
+                <input type="radio" id="option_c" name="answer">
+                <label id="text_option_c" for="option_c"></label>
+            </div>
+            <div class="option-item">
+                <input type="radio" id="option_d" name="answer">
+                <label id="text_option_d" for="option_d"></label>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+    <div class="result-container" id="result-container">
+        <h2 id="result-text"></h2>
+        <button onclick="retryQuiz()">Try Again</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
